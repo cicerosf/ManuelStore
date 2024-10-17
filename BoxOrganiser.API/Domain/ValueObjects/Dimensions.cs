@@ -1,4 +1,6 @@
-﻿namespace BoxOrganiser.API.Domain.ValueObjects;
+﻿using BoxOrganiser.API.Domain.Exceptions;
+
+namespace BoxOrganiser.API.Domain.ValueObjects;
 
 public class Dimensions
 {
@@ -9,6 +11,11 @@ public class Dimensions
 
     public Dimensions(int height, int width, int length)
     {
+        if (height <= 0 || width <= 0 || length <= 0)
+        {
+            throw new DomainException("Dimensions must be greater than zero.");
+        }
+
         Height = height;
         Width = width;
         Length = length;

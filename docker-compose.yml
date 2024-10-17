@@ -1,0 +1,22 @@
+﻿version: '3.4'
+
+services:
+  authentication-api:
+    image: authentication.api
+    build:
+      context: ./Authentication.API
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  boxorganiser-api:
+    image: boxorganiser.api
+    build:
+      context: ./BoxOrganiser.API
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development

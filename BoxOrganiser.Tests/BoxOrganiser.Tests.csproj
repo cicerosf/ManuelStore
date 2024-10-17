@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BoxOrganiser.API\BoxOrganiser.API.csproj" />
     <ProjectReference Include="..\BoxOrganiser\BoxOrganiser.API.csproj" />
   </ItemGroup>
 
