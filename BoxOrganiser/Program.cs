@@ -1,25 +1,15 @@
+using BoxOrganiser.API.Startup.Authentication;
+using BoxOrganiser.API.Startup.Pipeline;
+using BoxOrganiser.API.Startup.Services;
+using BoxOrganiser.API.Startup.Swagger;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+ServiceConfiguration.AddServices(builder);
+AuthenticationConfiguration.AddAuthentication(builder);
+SwaggerConfiguration.AddSwagger(builder);
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
+PipelineConfiguration.ConfigurePipeline(app);
 
 app.Run();
