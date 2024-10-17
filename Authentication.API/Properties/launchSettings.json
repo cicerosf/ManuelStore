@@ -4,16 +4,16 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:45624",
-      "sslPort": 44374
+      "applicationUrl": "http://localhost:47511",
+      "sslPort": 44310
     }
   },
   "profiles": {
-    "BoxOrganiser.API": {
+    "Authentication.API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:5179;https://localhost:7005",
+      "applicationUrl": "http://localhost:5222;https://localhost:7040",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

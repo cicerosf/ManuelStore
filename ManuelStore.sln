@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxOrganiser.API", "BoxOrganiser\BoxOrganiser.API.csproj", "{E13B07F2-1668-42EA-90B7-066A6D598A30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.API", "Authentication.API\Authentication.API.csproj", "{DED3161F-0165-4E92-990F-5D8DF37E6AB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E13B07F2-1668-42EA-90B7-066A6D598A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E13B07F2-1668-42EA-90B7-066A6D598A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E13B07F2-1668-42EA-90B7-066A6D598A30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED3161F-0165-4E92-990F-5D8DF37E6AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED3161F-0165-4E92-990F-5D8DF37E6AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED3161F-0165-4E92-990F-5D8DF37E6AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED3161F-0165-4E92-990F-5D8DF37E6AB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
