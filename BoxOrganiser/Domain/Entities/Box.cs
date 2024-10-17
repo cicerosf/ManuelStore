@@ -15,10 +15,8 @@ public class Box
         Dimensions = dimensions;
     }
 
-    public bool Fits(Product product)
+    public bool Fits(double totalVolume)
     {
-        return product.Dimensions.Height <= Dimensions.Height &&
-               product.Dimensions.Width <= Dimensions.Width &&
-               product.Dimensions.Length <= Dimensions.Length;
+        return totalVolume < Dimensions.Volume;
     }
 }
