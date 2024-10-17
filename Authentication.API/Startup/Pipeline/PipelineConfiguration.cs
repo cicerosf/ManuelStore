@@ -1,9 +1,13 @@
-﻿namespace Authentication.API.Startup.Pipeline;
+﻿using Authentication.API.Middlewares;
+
+namespace Authentication.API.Startup.Pipeline;
 
 public static class PipelineConfiguration
 {
     public static void ConfigurePipeline(WebApplication app)
     {
+        app.UseMiddleware<ExceptionMiddleware>();
+
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
